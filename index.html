@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/imges/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/imges/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+    <title>국립중앙박물관</title>
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <!-- <figure></figure> 이미지 박스 태그-->
+    <div id="wrap">
+        <header>
+            <div class="header-inner">
+                <nav>
+                    <div class="nav-wrap">
+                        <a href="login.html" class="login">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                </nav>
+                <div class="gnb">
+                    <h1 class="logo"><a href="#"><img src="imges/logo.png" alt=""></a></h1>
+                    <div class="header-gnb">
+                        <ul>
+                            <li><a href="#">박물관소개</a></li>
+                            <li><a href="#">전시</a></li>
+                            <li><a href="#">교육</a></li>
+                            <li><a href="#">문화행사</a></li>
+                            <li><a href="#">소장품</a></li>
+                            <li><a href="#">관람정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="search"></button>
+                        <button class="move-btn">
+                            <div></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fullmenu-open">
+                <div class="full-menu-wrap">
+                    <div class="menu-top">
+                        <h1 class="logo_W">
+                            <img src="imges/logo-w.png" alt="메뉴로고">
+                        </h1>
+                    </div>
+                    <div class="meun-wrap">
+                        <aside class="dep_wrap">
+                            <ul>
+                                <li class="dep_01">
+                                    관람정보
+                                    <ul class="dep_02">
+                                        <li><a href="#">관람안내</a></li>
+                                        <li><a href="#">전시해설</a></li>
+                                        <li><a href="#">예약하기</a></li>
+                                        <li><a href="#">관람・편의시설</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep_01">
+                                    전시
+                                    <ul class="dep_02">
+                                        <li><a href="#">상설전시</a></li>
+                                        <li><a href="#">특별전시</a></li>
+                                        <li><a href="#">디지털 실감 영상관</a></li>
+                                        <li><a href="#">온라인전시관</a></li>
+                                        <li><a href="#">우리문화재 국외 전시</a></li>
+                                        <li><a href="#">소속 국립박물관 전시</a></li>
+                                        <li><a href="#">전시도록</a></li>
+                                        <li><a href="#">외국박물관 소장 한국문화재</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep_01">교육</li>
+                                <li class="dep_01">
+                                    문화행사
+                                    <ul class="dep_02">
+                                        <li><a href="#">행사</a></li>
+                                        <li><a href="#">공연</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep_01">
+                                    소장품
+                                    <ul class="dep_02">
+                                        <li><a href="#">큐레이터 추천 소장품</a></li>
+                                        <li><a href="#">소장품검색</a></li>
+                                        <li><a href="#">국보 보물 검색</a></li>
+                                        <li><a href="#">3D 데이터 검색</a></li>
+                                        <li><a href="#">수어 동영상</a></li>
+                                        <li><a href="#">소장품 열람 복제</a></li>
+                                        <li><a href="#">소장품 대여 안내</a></li>
+                                        <li><a href="#">문화제 기증 안내</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep_01">
+                                    박물관소개
+                                    <ul class="dep_02">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">비전과 전략</a></li>
+                                        <li><a href="#">발자취</a></li>
+                                        <li><a href="#">조작 및 업무</a></li>
+                                        <li><a href="#">시설소개</a></li>
+                                        <li><a href="#">수장고</a></li>
+                                        <li><a href="#">박물관 관련 자료</a></li>
+                                        <li><a href="#">문화유산 표준관리시스템</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="drop_wrap">
+                            <div class="fullmenu-drow-drop">
+                                <ul>
+                                    <li class="drow_dep-1">
+                                        <p>관련 사이트 바로가기</p>
+                                        <ul class="drow_dep-2">
+                                            <li><a href="">국립박물관 문화재단</a></li>
+                                            <li><a href="">국립중앙박물관회</a></li>
+                                            <li><a href="">사단법인 한국박물관협회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drow_dep-1">
+                                        <p>소속 박물관 바로가기</p>
+                                        <ul class="drow_dep-2">
+                                            <li><a href="#">국립경주박물관</a></li>
+                                            <li><a href="#">국립광주박물관</a></li>
+                                            <li><a href="#">국립전주박물관</a></li>
+                                            <li><a href="#">국립대구박물관</a></li>
+                                            <li><a href="#">국립공주박물관</a></li>
+                                            <li><a href="#">국립청주박물관</a></li>
+                                            <li><a href="#">국립김해박물관</a></li>
+                                            <li><a href="#">국립제주박물관</a></li>
+                                            <li><a href="#">국립춘천박물관</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="search-open">
+                <div class="search-inner">
+                    <div class="search-bar">
+                        <h3 class="search-tit">무엇을 찾으시나요?</h3>
+                        <input class="search-text" type="search" placeholder="검색해보세요." value="">
+                        <button class="search-btn"><i class="search-icon"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="vis-contaniner">
+                <section class="vis-slide">
+                    <div class="swiper mySwiper pc">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="linear-gradient"></div>
+                                <div class="slide-tit">
+                                    <span>
+                                        <p class="category">현대미술</p>
+                                        <p class="day">2023. 04. 12</p>
+                                    </span>
+                                    <h3 class="tit">[서울] 페터 바이벨 : 인지 행위로서의 예술</h3>
+                                </div>
+                                <img src="imges/main_slide_01.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="linear-gradient"></div>
+                                <div class="slide-tit">
+                                    <span>
+                                        <p class="category">현대미술</p>
+                                        <p class="day">2023. 05. 12</p>
+                                    </span>
+                                    <h3 class="tit">[서울] 페터 바이벨 : 인지 행위로서의 예술</h3>
+                                </div>
+                                <img src="imges/main_slide_01.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="linear-gradient"></div>
+                                <div class="slide-tit">
+                                    <span>
+                                        <p class="category">현대미술</p>
+                                        <p class="day">2023. 05. 12</p>
+                                    </span>
+                                    <h3 class="tit">[서울] 페터 바이벨 : 인지 행위로서의 예술</h3>
+                                </div>
+                                <img src="imges/main_slide_01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-fraction"></div>
+                    </div>
+                    <div class="time-wrap">
+                        <figure class="time-left">
+                            <span class="time-tit">
+                                <p>관람시간</p>
+                                <div class="text">
+                                    <p>월 화 목 금 일 10:00 ~ 18:00</p>
+                                    <p>수 토 10:00 ~ 21:00</p>
+                                    <p class="bold">입장 마감은 폐관 30분 전까지</p>
+                                </div>
+                            </span>
+                        </figure>
+                        <figure class="time-right">
+                            <span class="time-tit">
+                                <p>관람료</p>
+                                <div class="text">
+                                    <p>무료</p>
+                                    <p class="bold">특별전시는 유료로 진행 됩니다.</p>
+                                </div>
+                            </span>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <!-- category
+            day -->
+            <div class="comtaniner">
+                <section class="open-list">
+                    <h3 class="open-tit tit">오픈 예정 전시</h3>
+                    <div class="list-wrap">
+                        <div class="item-690">
+                            <div class="img-wrap">
+                                <a href="#">
+                                    <div class="thum"><img src="imges/left-img.png" alt=""></div>
+                                </a>
+                                <div class="item-text">
+                                    <p class="item-category wh">사진전시회</p>
+                                    <h3 class="item-tit wh">[코엑스] 현대 한국의 생활</h3>
+                                    <p class="day wh">2023. 04. 13</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="thum"><img src="imges/item-img-01.png" alt=""></div>
+                                        <div class="item-list-text">
+                                            <p class="item-category">현대미술</p>
+                                            <h3 class="item-tit">[서울] 색다른 공간의 멀티버스</h3>
+                                            <p class="day">2023. 04. 13</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="thum"><img src="imges/item-img-02.png" alt=""></div>
+                                        <div class="item-list-text">
+                                            <p class="item-category">현대미술</p>
+                                            <h3 class="item-tit">[서울] 한국의 현대미술 : 패러독스</h3>
+                                            <p class="day">2023. 04. 13</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="thum"><img src="imges/item-img-03.png" alt=""></div>
+                                        <div class="item-list-text">
+                                            <p class="item-category">팝아트</p>
+                                            <h3 class="item-tit">[홍대] 나만의 팝아트 전시회</h3>
+                                            <p class="day">2023. 04. 13</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="thum"><img src="imges/item-img-04.png" alt=""></div>
+                                        <div class="item-list-text">
+                                            <p class="item-category">전시회</p>
+                                            <h3 class="item-tit">[서울] 한국의 멋을 지닌 : 포토그래퍼</h3>
+                                            <p class="day">2023. 04. 13</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="digital-slide">
+                    <div class="digital-tit">
+                        <h3 class="tit">: 디지털 미술관</h3>
+                        <div class="slide-btn">
+                            <div class="swiper-button-prev">
+                                <img src="imges/slide-left-arrow.png" alt="">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="imges/slide-rigth-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper digital">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="1" data-aos-duration="1000">
+                                <a href="#">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-01.png" alt="반 고흐 디지털아트 전시회">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">반 고흐, 디지털아트 전시회<br />
+                                            벤쿠버에서 열리다.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1100">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-02.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">새로운 아트의 시작<br />
+                                            디지털아트.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-03.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">벚꽃을 가득 담은 디지털아트<br />
+                                            Janpan.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1300">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-04.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">일본의 멋을 가득 담은<br />
+                                            디지털 아트의 시작</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1400">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-05.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">다양한 디지털아트를<br />
+                                            살펴보는</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500">
+                                <a href="#">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-01.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">반 고흐, 디지털아트 전시회<br />
+                                            벤쿠버에서 열리다.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1600">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-02.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">새로운 아트의 시작<br />
+                                            디지털아트.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1700">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-03.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">벚꽃을 가득 담은 디지털아트<br />
+                                            Janpan.</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1800">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-04.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">일본의 멋을 가득 담은<br />
+                                            디지털 아트의 시작</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1900">
+                                <a href="">
+                                    <div class="digital-thum">
+                                        <img src="imges/slide-item-05.png" alt="">
+                                    </div>
+                                    <div class="digital-contant">
+                                        <p class="item-category">디지털아트</p>
+                                        <h3 class="item-tit">다양한 디지털아트를<br />
+                                            살펴보는</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="education-wrap">
+                    <div class="education-tit">
+                        <h3 class="tit">: 교육안내</h3>
+                    </div>
+                    <div class="slide-wrap">
+                        <div class="swiper mySwiper education">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="education-contant">
+                                            <p class="education-category">교육</p>
+                                            <h3 class="education-tit">뮤지엄피크닉콘서트 X<br />
+                                                햄스터파우더클럽</h3>
+                                            <p class="day">2023. 04. 20 ~ 2023. 04.26</p>
+                                            <p class="location">장소 : 과천 어린이박물관</p>
+                                        </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="education-contant">
+                                            <p class="education-category">디지털아트</p>
+                                            <h3 class="education-tit">새로운 아트의 시작<br />
+                                                디지털아트.</h3>
+                                            <p class="day">2023. 04. 20 ~ 2023. 04.26</p>
+                                            <p class="location">장소 : 과천 어린이박물관</p>
+                                        </div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="education-contant">
+                                            <p class="education-category">디지털아트</p>
+                                            <h3 class="education-tit">벚꽃을 가득 담은 디지털아트<br />
+                                                Janpan.</h3>
+                                            <p class="day">2023. 04. 20 ~ 2023. 04.26</p>
+                                            <p class="location">장소 : 과천 어린이박물관</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="education-slide-btn">
+                                <div class="education-swiper-button-prev">
+                                    <img src="imges/slide-left-arrow.png" alt="">
+                                </div>
+                                <div class="education-swiper-button-next">
+                                    <img src="imges/slide-rigth-arrow.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper mySwiper education-slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#">
+                                        <div class="education-thum">
+                                            <img src="imges/midee-slide-item-01.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <div class="education-thum">
+                                            <img src="imges/midee-slide-item-02.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <div class="education-thum">
+                                            <img src="imges/midee-slide-item-03.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+                </section>
+                <section class="bord-wrap">
+                    <div class="news">
+                        <div class="news-tit">
+                            <h3 class="tit">뉴스레터</h3>
+                        </div>
+                        <ul>
+                            <li data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <a href="#">
+                                    <div class="thum">
+                                        <img src="imges/news-item-01.png" alt="">
+                                    </div>
+                                    <div class="contant">
+                                        <p class="item-category">포커스</p>
+                                        <h3 class="item-tit">다중 세계 속 지금,<br />
+                                            여기 서스펜스의 도시, 워치 앤 칠 3.0
+                                        </h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                                <a href="#">
+                                    <div class="thum">
+                                        <img src="imges/news-item-02.png" alt="">
+                                    </div>
+                                    <div class="contant">
+                                        <p class="item-category">미술관플러스</p>
+                                        <h3 class="item-tit">줄서기 없이 간편해요<br />
+                                            스마트검표시스템 사용 현장을 가다
+                                        </h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                <a href="#">
+                                    <div class="thum">
+                                        <img src="imges/news-item-03.png" alt="">
+                                    </div>
+                                    <div class="contant">
+                                        <p class="item-category">미술관플러스</p>
+                                        <h3 class="item-tit">똑똑 예술이 도착했습니다.<br />
+                                            미술은행 나눔 미술은행 개최</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                                <a href="#">
+                                    <div class="thum">
+                                        <img src="imges/news-item-04.png" alt="">
+                                    </div>
+                                    <div class="contant">
+                                        <p class="item-category">소장품더보기</p>
+                                        <h3 class="item-tit">구상과 추상의 공존, 전현선<br />
+                                            ‹나란히 걷는 낮과 밤›</h3>
+                                        <p class="day">2023. 04. 13</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="notification">
+                        <div class="notification-tit">
+                            <h3 class="tit">공지사항</h3>
+                            <a href="#" class="view-btn">더보기</a>
+                        </div>
+                        <div class="bord-list" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="bord-category">소식</p>
+                                        <p class="bord-tit">2023년 국립중앙박물관 보존과학 기초연수 대상자 알림</p>
+                                        <p class="bord-day">2023. 04. 12</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="comtaniner">
+                <div class="footer-wrap">
+                    <div class="footer-list">
+                        <div class="footer-copyright">
+                            <h1 class="footer-logo">
+                                <img src="imges/logo.png" alt="">
+                            </h1>
+                            <p class="address">(04383) 서울시 용산구 서빙고로 137(용산동6가 168-6)</p>
+                            <p class="cs-number">대표전화 02-2077-9000</p>
+                            <p class="copy-right">© National Museum of Korea.</p>
+                        </div>
+                        <div class="system">
+                            <ul>
+                                <li><a href="#">문화유산표준관리시스템</a></li>
+                                <li><a href="#">청년멘토</a></li>
+                                <li><a href="#">VCM 가상명품박물관</a></li>
+                            </ul>
+                        </div>
+                        <div class="privacy">
+                            <ul>
+                                <li><a href="#" class="bold">개인정보처리방침</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">저작권보호정책</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-drow-drop">
+                        <ul>
+                            <li class="dep-1">
+                                <p>관련 사이트 바로가기</p>
+                                <ul class="dep-2">
+                                    <li><a href="">국립박물관 문화재단</a></li>
+                                    <li><a href="">국립중앙박물관회</a></li>
+                                    <li><a href="">사단법인 한국박물관협회</a></li>
+                                </ul>
+                            </li>
+                            <li class="dep-1">
+                                <p>소속 박물관 바로가기</p>
+                                <ul class="dep-2">
+                                    <li><a href="#">국립경주박물관</a></li>
+                                    <li><a href="#">국립광주박물관</a></li>
+                                    <li><a href="#">국립전주박물관</a></li>
+                                    <li><a href="#">국립대구박물관</a></li>
+                                    <li><a href="#">국립공주박물관</a></li>
+                                    <li><a href="#">국립청주박물관</a></li>
+                                    <li><a href="#">국립김해박물관</a></li>
+                                    <li><a href="#">국립제주박물관</a></li>
+                                    <li><a href="#">국립춘천박물관</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/commit.js"></script>
+    <script>
+        $(document).ready(function () {
+            AOS.init({
+
+            });
+        });
+    </script>
+
+</html>
