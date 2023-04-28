@@ -8,6 +8,7 @@ body {
 
 body.active {
     overflow-y: hidden;
+    touch-action:none;
 }
 * {
     padding: 0;
@@ -1106,7 +1107,10 @@ footer {
     }
 
     .time-wrap {
-        margin: 0 48px;
+        padding: 12px 48px;
+    }
+    .header-gnb ul li{
+        padding: 0 14px;
     }
 }
 
@@ -1162,6 +1166,9 @@ footer {
     }
     .drop_wrap{
         width: 50%;
+    }
+    .dep_wrap .dep_02{
+        left: 34%;
     }
 }
 
