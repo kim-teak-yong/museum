@@ -29,10 +29,6 @@ $(document).ready(function(){
         $(".search").click(function (event) {
             $(this).toggleClass("active");
             $(".search-open").toggleClass("active");
-            $("body").toggleClass("active");
-            $('body').on('scroll touchmove mousewheel', e => {
-                $('body').scrollTop(0);
-            });
         });
 });
 
