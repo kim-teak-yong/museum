@@ -6,6 +6,9 @@ $(document).ready(function(){
             $(".fullmenu-open").toggleClass("active");
             $(".search-open").removeClass("active");
             $(".search").removeClass("active");
+            $('body').on('scroll touchmove mousewheel', e => {
+                $('body').scrollTop(0);
+            });
         });
 
         $(".dep_01").on('mouseenter mouseleave', function () {
