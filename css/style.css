@@ -3,7 +3,7 @@
 body {
     font-family: 'Pretendard' !important;
     letter-spacing: -0.25px;
-    
+    overflow-x: hidden;
 }
 
 body.active {
@@ -1113,7 +1113,14 @@ footer {
         padding: 0 14px;
     }
 }
-
+@media (max-width: 1024px){
+    .drop_wrap{
+        width: 50%;
+    }
+    .dep_wrap .dep_02{
+        left: 34%;
+    }
+}
 @media (max-width: 820px){
     section{
         margin: 0 0 60px 0;
@@ -1131,7 +1138,7 @@ footer {
         padding-bottom: 8px;
     }
     .slide-tit .tit{
-        font-size: 1.35rem;
+        font-size: 1.25rem;
     }
 
     .time-wrap{
@@ -1150,8 +1157,86 @@ footer {
     .time-left .time-tit>p{
         padding-right: 22px;
     }
+
+    .meun-wrap{
+        flex-direction: column;
+    }
+    .drop_wrap{
+        width: 100%;
+    }
+    .dep_01{
+        font-size: 1.75rem;
+    }
+    .dep_wrap .dep_02 li a{
+        font-size: 1.45rem;
+    }
+    .dep_wrap .dep_02{
+        position: relative;
+        left: 0;
+        margin-top: 44px;
+    }
+    .drow_dep-1{
+        padding: 12px 12px 12px 0;
+    }
+    .move-btn.active{
+        right: 10px;
+    }
+
+    .search-bar{
+        width: 70%;
+    }
+
+    .list-wrap{
+        flex-direction: column;
+    }
+    .list-wrap .item-690{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .list-wrap .item-list{
+        width: 100%;
+    }
+    .img-wrap a .thum{
+        padding-bottom: 100%;
+    }
+    .item-text{
+        bottom: 40px;
+        left: 20px;
+    }
+    .item-tit.wh{
+        font-size: 1.25rem; 
+    }
+
+    .item-list ul{
+        justify-content: normal;
+        margin-top: 0;
+    }
+    .item-list ul li{
+        width: 100%;
+        margin: 12px 0;
+    }
+    .item-list ul li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .item-list ul li a .thum{
+        width: calc(55% - 10px);
+        padding-bottom: 35%;
+    }
+    .item-list-text{
+        width: calc(45% - 10px);
+    }
+    .item-tit{
+        font-size: 1rem;
+        padding: 6px 12px 12px 0;
+    }
+    
 }
 @media (max-width: 1024px) and (min-width: 375px) {
+    .comtaniner{
+        padding: 0 28px;
+    }
     .digital-slide::before {
         height: 300px;
     }
@@ -1162,13 +1247,7 @@ footer {
         font-size: 1rem;
     }
     .full-menu-wrap{
-        padding: 48px;
-    }
-    .drop_wrap{
-        width: 50%;
-    }
-    .dep_wrap .dep_02{
-        left: 34%;
+        padding: 48px 24px;
     }
 }
 
