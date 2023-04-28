@@ -1409,6 +1409,8 @@ footer {
     letter-spacing: -0.8px;
     font-weight: 500;
     color: #fff;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .reset input::placeholder {
@@ -1420,6 +1422,8 @@ footer {
     color: #fff;
     font-size: 20px;
     margin: 24px 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 .form_pw.reset input{
     margin-bottom: 12px
