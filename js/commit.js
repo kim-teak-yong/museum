@@ -60,6 +60,36 @@ $(document).ready(function () {
             }
         },
     });
+
+    var swiper = new Swiper(".moblie", {
+        slidesPerView: 1,
+        centeredSlides: true,    //센터모드
+        // effect: 'fade',
+        // fadeEffect: {
+        //     crossFade: true
+        // },
+        autoplay: {     //자동슬라이드 (false-비활성화)
+            delay: 5000, // 시간 설정
+            disableOnInteraction: false, // false-스와이프 후 자동 재생
+        },
+        loop: true,   // 슬라이드 반복 여부
+        loopAdditionalSlides: 1,
+        pagination: {
+            el: ".swiper-pagination-fraction",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return ('0' + number).slice(-2);
+            },
+            formatFractionTotal: function (number) {
+                return ('0' + number).slice(-2);
+            },
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' / ' +
+                    '<span class="' + totalClass + '"></span>';
+            }
+        },
+    });
 });
 
 $(document).ready(function () {
