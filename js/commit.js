@@ -29,6 +29,10 @@ $(document).ready(function(){
         $(".search").click(function (event) {
             $(this).toggleClass("active");
             $(".search-open").toggleClass("active");
+            $("body").toggleClass("active");
+            $('body').on('scroll touchmove mousewheel', e => {
+                $('body').scrollTop(0);
+            });
         });
 });
 
@@ -67,10 +71,10 @@ $(document).ready(function () {
     var swiper = new Swiper(".moblie", {
         slidesPerView: 1,
         centeredSlides: true,    //센터모드
-        // effect: 'fade',
-        // fadeEffect: {
-        //     crossFade: true
-        // },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
         autoplay: {     //자동슬라이드 (false-비활성화)
             delay: 5000, // 시간 설정
             disableOnInteraction: false, // false-스와이프 후 자동 재생
@@ -108,9 +112,12 @@ $(document).ready(function () {
                 slidesPerView: 1,
             },
             380: {
+                slidesPerView: 1,
+            },
+            820:{
                 slidesPerView: 2,
             },
-            1024: {
+            1024:{
                 slidesPerView: 3,
             },
             1025: {
