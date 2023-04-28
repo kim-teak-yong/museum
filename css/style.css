@@ -1320,6 +1320,7 @@ footer {
     }
     .item-list-text{
         width: 100%;
+        padding-top: 10px;
     }
     .education-tit{
         font-size: 1.75rem;
@@ -1337,6 +1338,13 @@ footer {
     .dep_01{
         font-size: 1.45rem;
         margin: 0 0 32px 0;
+    }
+    .fullmenu-drow-drop .drow_dep-1 p{
+        font-size: 1rem;
+    }
+    .drow_dep-1{
+        margin-bottom: 10px;
+        padding: 4px 4px 4px 0;
     }
 }
 @media (max-width: 1024px) and (min-width: 375px) {
