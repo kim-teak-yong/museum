@@ -277,6 +277,7 @@ nav a:last-child {
 
 .fullmenu-open {
     width: 100%;
+    height: 100vh;
     background-image: url(../imges/fullmenu_bg.png);
     filter: brightness(70%);
     background-position: center center;
@@ -312,12 +313,12 @@ nav a:last-child {
     max-width: 1600px;
     margin: 0 auto;
     padding: 48px 0 0 0;
+    height: 100vh;
 }
 
 .meun-wrap {
     position: relative;
     padding-top: 12.2vw;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
