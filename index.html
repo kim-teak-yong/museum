@@ -181,9 +181,9 @@
                                         <p class="category">현대미술</p>
                                         <p class="day">2023. 05. 12</p>
                                     </span>
-                                    <h3 class="tit">[서울] 페터 바이벨 : 인지 행위로서의 예술</h3>
+                                    <h3 class="tit">[벤쿠버] 반 고흐, 디지털아트 전시회</h3>
                                 </div>
-                                <img src="imges/main_slide_01.png" alt="">
+                                <img src="imges/main_slide_02.png" alt="">
                             </div>
                             <div class="swiper-slide">
                                 <div class="linear-gradient"></div>
@@ -192,12 +192,12 @@
                                         <p class="category">현대미술</p>
                                         <p class="day">2023. 05. 12</p>
                                     </span>
-                                    <h3 class="tit">[서울] 페터 바이벨 : 인지 행위로서의 예술</h3>
+                                    <h3 class="tit">[일본] 벚꽃을 가득 담은 디지털아트 : Janpan</h3>
                                 </div>
-                                <img src="imges/main_slide_01.png" alt="">
+                                <img src="imges/main_slide_03.png" alt="">
                             </div>
                         </div>
-                        <div class="swiper-pagination-fraction"></div>
+                        <div class="main-swiper-pagination-fraction"></div>
                     </div>
                     <div class="swiper mySwiper moblie">
                         <div class="swiper-wrapper">
@@ -219,7 +219,7 @@
                                         <p class="category">디지털아트</p>
                                         <p class="day">2023. 05. 12</p>
                                     </span>
-                                    <h3 class="tit">[서울] 반고흐 : 벤쿠버에서 다시 한번</h3>
+                                    <h3 class="tit">[벤쿠버] 반 고흐, 디지털아트 전시회</h3>
                                 </div>
                                 <img src="imges/main_slide_m_02.png" alt="">
                             </div>
@@ -235,7 +235,7 @@
                                 <img src="imges/main_slide_m_03.png" alt="">
                             </div>
                         </div>
-                        <div class="swiper-pagination-fraction"></div>
+                        <div class="main-swiper-pagination-fraction"></div>
                     </div>
                     <div class="time-wrap">
                         <figure class="time-left">
@@ -476,7 +476,7 @@
                         <h3 class="tit">: 교육안내</h3>
                     </div>
                     <div class="slide-wrap">
-                        <div class="swiper mySwiper education pc">
+                        <div class="swiper mySwiper education">
                             <ul class="swiper-wrapper">
                                 <li class="swiper-slide">
                                     <a href="#">
@@ -564,7 +564,8 @@
                                     </div>
                                 </li>
                             </ul>
-                    </div>
+                            <div class="mobile-swiper-pagination-fraction"></div>
+                        </div>
                 </section>
                 <section class="bord-wrap">
                     <div class="news">
@@ -698,7 +699,7 @@
                             <h1 class="footer-logo">
                                 <img src="imges/logo.png" alt="">
                             </h1>
-                            <p class="address">(04383) 서울시 용산구 서빙고로 137<br class="dn"/>(용산동6가 168-6)</p>
+                            <p class="address">(04383) 서울시 용산구 서빙고로 137<br class="dn" />(용산동6가 168-6)</p>
                             <p class="cs-number">대표전화 02-2077-9000</p>
                             <p class="copy-right">© National Museum of Korea.</p>
                         </div>
@@ -759,14 +760,14 @@
             });
         });
     </script>
-        <script>
-            //아이폰 세로 값 vh 변환코드
+    <script>
+        //아이폰 세로 값 vh 변환코드
+        let vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+        window.addEventListener('resize', () => {
             let vh = window.innerHeight * 0.01
             document.documentElement.style.setProperty('--vh', `${vh}px`)
-            window.addEventListener('resize', () => {
-                let vh = window.innerHeight * 0.01
-                document.documentElement.style.setProperty('--vh', `${vh}px`)
-            });
-            </script>
+        });
+    </script>
 
 </html>

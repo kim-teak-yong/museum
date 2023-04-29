@@ -37,6 +37,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".pc", {
         slidesPerView: 1,
         centeredSlides: true,    //센터모드
+        speed : 1000,
         // effect: 'fade',
         // fadeEffect: {
         //     crossFade: true
@@ -48,7 +49,7 @@ $(document).ready(function () {
         loop: true,   // 슬라이드 반복 여부
         loopAdditionalSlides: 1,
         pagination: {
-            el: ".swiper-pagination-fraction",
+            el: ".main-swiper-pagination-fraction",
             type: "fraction",
             formatFractionCurrent: function (number) {
                 return ('0' + number).slice(-2);
@@ -68,17 +69,18 @@ $(document).ready(function () {
         slidesPerView: 1,
         centeredSlides: true,    //센터모드
         effect: 'fade',
+        speed : 1000,
         fadeEffect: {
             crossFade: true
         },
-        autoplay: {     //자동슬라이드 (false-비활성화)
-            delay: 5000, // 시간 설정
-            disableOnInteraction: false, // false-스와이프 후 자동 재생
-        },
+        // autoplay: {     //자동슬라이드 (false-비활성화)
+        //     delay: 5000, // 시간 설정
+        //     disableOnInteraction: false, // false-스와이프 후 자동 재생
+        // },
         loop: true,   // 슬라이드 반복 여부
         loopAdditionalSlides: 1,
         pagination: {
-            el: ".swiper-pagination-fraction",
+            el: ".main-swiper-pagination-fraction",
             type: "fraction",
             formatFractionCurrent: function (number) {
                 return ('0' + number).slice(-2);
@@ -134,6 +136,21 @@ $(document).ready(function () {
     
     var galleryTop = new Swiper(".education-slide", {
         slidesPerView: 1,
+        pagination: {
+            el: ".mobile-swiper-pagination-fraction",
+            type: "fraction",
+            formatFractionCurrent: function (number) {
+                return ('0' + number).slice(-2);
+            },
+            formatFractionTotal: function (number) {
+                return ('0' + number).slice(-2);
+            },
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' +
+                    ' / ' +
+                    '<span class="' + totalClass + '"></span>';
+            }
+        },
     });
     
     galleryTop.controller.control = galleryThumbs;

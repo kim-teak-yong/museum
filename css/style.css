@@ -526,6 +526,9 @@ main {
     transform: translate(-50%, 0%);
     bottom: 20%;
 }
+.vis-slide .swiper.mySwiper.moblie .swiper-slide.swiper-slide-active .slide-tit{
+    bottom: 14%;
+}
 .vis-contaniner,
 .comtaniner {
     max-width: 1600px;
@@ -555,7 +558,6 @@ main {
     color: #fff;
     text-align: center;
     width: 100%;
-    max-width: 1600px;
 }
 
 .slide-tit span {
@@ -590,30 +592,46 @@ main {
     font-weight: 600;
 }
 
-.swiper-pagination-fraction {
+.main-swiper-pagination-fraction {
     position: absolute;
-    left: 50% !important;
-    bottom: 14% !important;
-    transform: translateX(-50%) !important;
-    color: #fff !important;
+    left: 50%;
+    bottom: 14% ;
+    transform: translateX(-50%) ;
+    color: #fff ;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
-.swiper-pagination-total {
+.main-swiper-pagination-fraction .swiper-pagination-total,
+.mobile-swiper-pagination-fraction .swiper-pagination-total {
     font-weight: 100;
-    padding: 0 6px;
-    font-size: 16px;
+    padding: 0 4px;
+    font-size: 1rem;
 }
 
-.swiper-pagination-current {
-    padding: 0 6px;
-    font-size: 16px;
+.main-swiper-pagination-fraction .swiper-pagination-current,
+.mobile-swiper-pagination-fraction .swiper-pagination-current {
+    padding: 0 4px;
+    font-size: 1rem;
+    font-weight: 500;
 }
-
+.mobile-swiper-pagination-fraction{
+    position: absolute;
+    color: #f8f8fa;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(20, 20, 20, 0.75);
+    padding: 10px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
 .time-wrap {
     padding: 20px 0;
     border-bottom: 1px solid #C3C3C3;
@@ -1177,15 +1195,32 @@ footer {
     section{
         margin: 0 0 60px 0;
     }
+    .open-tit{
+        padding-bottom: 24px;
+    }
+    .tit{
+        font-size: 1.75rem;
+    }
+    .news-tit, .notification-tit{
+        padding-bottom: 24px;
+    }
     .swiper.mySwiper.pc{
+        display: none;
+    }
+    .swiper.mySwiper.education{
         display: none;
     }
     .swiper.mySwiper.moblie{
         display: block;
     }
 
-    .swiper-pagination-fraction{
-        bottom: 8% !important;
+    .main-swiper-pagination-fraction{
+        bottom: 8%;
+    }
+    .mobile-swiper-pagination-fraction{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
     }
     .header-gnb{
         display: none;
@@ -1493,7 +1528,7 @@ footer {
 .login-logo{
     width: 160px;
     margin: 0 auto;
-    padding: 24px 0;
+    padding: 14px 0 24px 0;
 }
 
 .login_list ul{
@@ -1557,7 +1592,7 @@ footer {
     }
     .login-btn input{
         font-size: 1rem;
-        padding: 20px 14px;
+        padding: 14px;
         margin: 12px 0;
     }
     .login_list ul{
