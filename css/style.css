@@ -172,7 +172,15 @@ nav a:last-child {
     align-items: center;
     gap: 7px;
 }
-
+.login-mobile{
+    width: 24px;
+    height: 22px;
+    background-image: url(../imges/login_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: none;
+}
 .search {
     width: 24px;
     height: 22px;
@@ -193,7 +201,7 @@ nav a:last-child {
     width: 100%;
     height: 340px;
     background-color: rgba(248,248,250,0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     position: relative;
     z-index: 2;
     top: 33px;
@@ -1144,8 +1152,28 @@ footer {
     .login-inner{
         width: 80%;
     }
+    .full-menu-wrap{
+        padding: 48px 24px;
+    }
 }
 @media (max-width: 820px){
+
+    nav{
+        display: none;
+    }
+    .gnb{
+        height: 60px;
+    }
+    header{
+        height: 60px;
+        padding: 10px 0;
+    }
+    .login-mobile{
+        display: block;
+    }
+    .search-open{
+        top: 0;
+    }
     section{
         margin: 0 0 60px 0;
     }
@@ -1154,6 +1182,10 @@ footer {
     }
     .swiper.mySwiper.moblie{
         display: block;
+    }
+
+    .swiper-pagination-fraction{
+        bottom: 8% !important;
     }
     .header-gnb{
         display: none;
@@ -1309,8 +1341,15 @@ footer {
     .footer-drow-drop .dep-1{
         padding: 12px 12px 12px 0;
     }
+    .full-menu-wrap{
+        height: 100vh;
+        padding: 21px 24px;
+    }
 }
 @media (max-width: 414px){
+    section{
+        margin: 0 0 40px 0;
+    }
     .item-list ul li a{
         display: block;
     }
@@ -1323,7 +1362,10 @@ footer {
         padding-top: 10px;
     }
     .education-tit{
-        font-size: 1.75rem;
+        font-size: 1.55rem;
+    }
+    .education-contant .day{
+        padding-bottom: 8px;
     }
     .news ul{
         margin-left: 0;
@@ -1347,7 +1389,7 @@ footer {
         padding: 4px 4px 4px 0;
     }
 }
-@media (max-width: 1024px) and (min-width: 375px) {
+@media (max-width: 1024px) and (min-width: 360px) {
     .comtaniner{
         padding: 0 24px;
     }
@@ -1359,9 +1401,6 @@ footer {
     }
     .header-gnb ul li a{
         font-size: 1rem;
-    }
-    .full-menu-wrap{
-        padding: 48px 24px;
     }
 }
 
@@ -1438,8 +1477,17 @@ footer {
 .form_pw.reset input{
     margin-bottom: 12px
 }
+.ck_block{
+    display: flex;
+    align-items: center;
+}
+.ck_block span{
+    color: #fff;
+    font-weight: 500;
+}
 .check_box input{
-    width: auto;
+    width: 20px;
+    -webkit-border-radius: 0;
 }
 
 .login-logo{
